@@ -1,0 +1,11 @@
+Instructions:
+
+Training
+1. Run 'Reset_files.m' to reset all the data stored to null. It clears the SIFT vectors and the databases.
+2. Run 'Training.m' to start training the database. Note: the code is self preserving, if you decide to stop trainig
+and continue later, just stop training and run the file again, it will pick up from the last image you stopped at.
+
+Testing
+1. Run 'Testing1.m' to generate recognized scenes for the training dataset. Operation time: around 1.15 hours for 150 images
+2. Run 'Train_network.m' to traing a neural network based on the training and testing database. Observe the confusion matrix.
+Re-train if we get garbage answers. Best fitting can be observed with 5 hidden nodes.
